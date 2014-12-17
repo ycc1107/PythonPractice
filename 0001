@@ -1,0 +1,18 @@
+__author__  = "cheng"
+
+# for practice
+# apple store app owner want to have a code genertor to create 200 coupon
+
+import random as rnd
+
+def main():
+    result = []
+    for i in range(200):
+        coupoun = ""
+        for j in range(10):
+            coupoun += chr(rnd.randint(ord('A'),ord('z')))
+        result.append(coupoun)
+        print(coupoun)
+
+
+if __name__ == "__main__": main()
